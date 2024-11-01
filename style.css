@@ -104,6 +104,19 @@ body {
     background-color: #fffdfc;
 }
 
+.btn-3 {
+    display: inline-block;
+    padding: 17px 35px;
+    border: 2px solid #1b293a;
+    background-color: #1b293a;
+    color: #fffdfc;
+}
+
+.btn-3:hover {
+    color: #1b293a;
+    background-color: #fffdfc;
+}
+
 .general {
     padding: 50px 0;
     text-align: center;
@@ -281,12 +294,36 @@ h2 {
 }
 
 .footer { 
-    padding: 100px 0 0 0;
+    background-color: #fffdfc;
+    color: #fff;
+    padding: 20px;
     text-align: center;
+}
+
+.footer h2 {
+    margin: 10px 0;
+    font-size: 1.5rem;
 }
 
 .form {
     margin-top: 35px;
+}
+
+.footer .campo {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.footer .btn-2 {
+    padding: 10px;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 .campo {
@@ -301,13 +338,6 @@ h2 {
     color: #b4b4b4;
 }
 
-.btn-2 {
-    padding: 17px 35px;
-    border: 2px solid #1b293a;
-    background-color: #1b293a;
-    color: #fffdfc;
-}
-
 .footer-txt {
     margin-top: 100px;
     border-top: 1px solid #b4b4b47e;
@@ -319,7 +349,7 @@ h2 {
     font-size: 16px;
 }
 
-@media(max-width:991px) {
+@media(max-width:600px) {
     .menu{
         padding: 30px;
     }
@@ -424,28 +454,41 @@ h2 {
     }
     
     .footer {
-        padding: 0;
-        margin-top: -140px;
+        text-align: left;
     }
 
-    .form {
-        display: flex;
-        flex-direction: column;
-        padding: 0 50px;
+    .footer h2 {
+        font-size: 1.3rem;
+        text-align: left;
     }
 
-    .campo {
-        margin: 0 0 10px 0;
+    .footer form {
+        width: 100%;
+        display: block;
     }
 
-    .footer-txt {
-        margin-top: 30px;
+    .footer .footer-txt {
+        margin-top: 15px;
+        text-align: left;
     }
 
-
-
-
-
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* Proporción 16:9 */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background: #000;
+    }
+    
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
 
 
 
